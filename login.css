@@ -1,0 +1,42 @@
+body {
+    /*background-color: #3e3939;*/
+    background-image: url('img/PKlogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+
+    height: 97%;
+    display: flex;
+}
+
+
+html {
+    height: 100%;
+}
+
+
+#main-field {
+    /*background-color: #685f5f;*/
+    background-color: white;
+    padding: 30px;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 60%;
+    opacity: 0.85;
+}
+
+#agb-text-area {
+    display: block;
+    margin: 10px;
+    overflow: auto;
+    height: 200px;
+    width: 90%;
+}
+
+#submit-button {
+ margin-top: 2em;
+}
