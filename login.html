@@ -7,9 +7,16 @@
     <link rel="icon" href="img/PKlogo.png">
 </head>
 <body>
+<input type="hidden" name="redirect_url" size="255" maxlength="255" value="">
+<input type="hidden" name="info_msg" size="32" maxlength="31" value="">
+<input type="hidden" name="network_name" size="64" maxlength="64" value="Guest Network">
+<input type="hidden" name="info_flag" size="16" maxlength="15" value="0">
+<input type="hidden" name="err_msg" size="32" maxlength="31" value="">
+<input type="hidden" name="err_flag" size="16" maxlength="15" value="0">
+<input type="hidden" name="buttonClicked" size="16" maxlength="15" value="0">
 
 <div id="main-field">
-    <form>
+    <form method="post" action="/login.html">
     <h2>Willkommen im Predigerkeller</h2>
 
     <div id="agb-text-area">
@@ -49,10 +56,12 @@
 
     <input id="agree" type="checkbox" > I agree with the Terms of Service
         <br>
-    <input id="submit-button" type="submit" value="Free WLAN">
+    <input id="submit-button" type="submit" onclick="submitAction()" value="Free WLAN">
     </form>
 
 </div>
 
 </body>
+<script src="script.js"></script>
+
 </html>
